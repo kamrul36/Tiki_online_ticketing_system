@@ -33,6 +33,6 @@
 
         <button type="submit" class="bg-blue-500 text-white p-2 rounded-md">Update User</button>
    
-
+        @endsection
 </body>
 </html>

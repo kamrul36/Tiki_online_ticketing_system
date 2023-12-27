@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Trip extends Model
 {
     use HasFactory;
-     protected $fillable = ['date'];
+     protected $fillable = ['date', 'location_from_id', 'location_to_id'];
 
      public function locationFrom()
     {

@@ -53,11 +53,7 @@ class UserController extends Controller
             'password' => 'nullable|min:6',
         ]);
 
-        $user->update([
-            'name' => $request->input('name'),
-            'email' => $request->input('email'),
-            'password' => $request->filled('password') ? bcrypt($request->input('password')) : $user->password,
-        ]);
+        $user->update($request->input());
 
         return redirect("/users/{$user->id}");
     }

@@ -9,7 +9,7 @@ class SeatAllocation extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['seat_number'];
+    protected $fillable = ['seat_number', 'trip_id', 'user_id'];
 
     public function user()
     {
